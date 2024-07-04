@@ -19,9 +19,13 @@ Pillow (PIL)
 ## Features
 
 User-friendly web interface for image upload
+
 Real-time food classification
+
 Displays top prediction and confidence score
+
 Shows top 3 predictions with their probabilities
+
 Supports JPG and JPEG image formats
 
 ## How to Run the Project
@@ -29,6 +33,7 @@ Supports JPG and JPEG image formats
 ## Prerequisites
 
 Python 3.x installed
+
 pip (Python package installer)
 
 ## Installation
