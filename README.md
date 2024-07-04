@@ -1,53 +1,72 @@
-# Food Classification Project
+Food Classification App
+Project Overview
+This project is a Streamlit-based web application that uses a pre-trained deep learning model to classify food images. Users can upload an image of food, and the app will predict the type of food in the image.
+Project Link
+[Insert your project repository link here]
+Tech Stack
 
-## Overview
+Python 3.x
+Streamlit
+TensorFlow / Keras
+Pandas
+NumPy
+Pillow (PIL)
 
-This project is a food classification application that uses deep learning to identify various food items from images. The model is trained on a dataset consisting of 20 different food classes, enabling it to predict the type of food present in a given image.
+Features
 
-<div style="background-color: #ffcccc; padding: 10px; border: 1px solid #ff0000;">
-  <strong>Note:</strong> If the deployed link is not working due to error in resources kindly prefer running locally using command mentioned below.
-</div>
+User-friendly web interface for image upload
+Real-time food classification
+Displays top prediction and confidence score
+Shows top 3 predictions with their probabilities
+Supports JPG and JPEG image formats
 
-## Table of Contents
+How to Run the Project
+Prerequisites
 
-- [Demo](#demo)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Model Training](#model-training)
-- [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [License](#license)
+Python 3.x installed
+pip (Python package installer)
 
-## Demo
+Installation
 
-Include a brief description of how to use your app and possibly include a link to a live demo or screenshots.
+Clone the repository:
+Copygit clone [Your repository URL]
+cd [Your project directory]
 
-## Features
+Create and activate a virtual environment (optional but recommended):
+Copypython -m venv .venv
+source .venv/bin/activate  # On Windows, use `.venv\Scripts\activate`
 
-- **Food Classification:** The model can predict the type of food from an input image among the 20 predefined classes.
-- **Streamlit App:** The project includes a Streamlit web application for easy interaction with the food classification model.
+Install the required packages:
+Copypip install -r requirements.txt
 
-## Installation
 
-1. Clone the repository:
+Running the App
 
-   ```bash
-   git clone https://github.com/dhruvk2002/food-classifier.git
+Ensure you're in the project directory and your virtual environment is activated (if you're using one).
+Run the Streamlit app:
+Copystreamlit run app.py
 
-2. Navigate to project directory
-   ```bash
-   cd food-classifier
+Open a web browser and go to the URL provided by Streamlit (usually http://localhost:8501).
 
-3. Install the required dependencies
-   ```bash
-   pip install -r requirements.txt
+Usage
 
-4. Running the app
-   ```bash
-   streamlit run app.py
+Once the app is running, you'll see an option to upload an image.
+Click on "Choose an image.." and select a JPG or JPEG image of food.
+The app will display the uploaded image and provide a prediction of the food type.
+You'll see the top prediction along with the top 3 predictions and their confidence scores.
 
-### About Dataset
-- We have used Indian Food Classification Dataset.
-- It contains around 20 classes of Indian Food Items.
-- For each class it contains 130-350 images.
+Model Information
+
+The app uses a pre-trained deep learning model for food classification.
+The model file should be named final_food_classifier.h5 and placed in the project root directory.
+Class names for predictions are read from a file named class_names.csv.
+
+Troubleshooting
+
+If you encounter a warning about tf.reset_default_graph being deprecated, you can safely ignore it as it's coming from an internal Keras function.
+Ensure all required files (final_food_classifier.h5 and class_names.csv) are present in the project directory.
+
+Contributing
+[Insert information about how others can contribute to your project]
+License
+[Insert your license information here]
