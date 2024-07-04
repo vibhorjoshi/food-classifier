@@ -32,11 +32,7 @@ Python 3.x installed
 pip (Python package installer)
 
 ## Installation
-
-## Clone the repository:
-Copygit clone [Your repository URL]
-cd [Your project directory]
-
+  
 ## Create and activate a virtual environment (optional but recommended):
 Copypython -m venv .venv
 
